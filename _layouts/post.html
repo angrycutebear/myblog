@@ -15,26 +15,6 @@
       <div class="post-container">
           {{ content }}
       </div>
-      {%- if site.posts.size > 0 -%}
-        <ul class="posts">
-          {%- for post in site.posts -%}
-          <li>
-            {%- assign date_format = site.minima.date_format | default: "%Y년 %m월 %d일" -%}
-            <div class="post-meta">
-              <a class="post-link" href="{{ post.url | relative_url }}">
-                <h2 class="post-title">{{ post.title | escape }}</h2>
-              </a>
-              <div class="post-date"><i class="icon-calendar"></i>{{ post.date | date: date_format }}</div>
-            </div>
-            <div class="post">
-              {%- if site.show_excerpts -%}
-              {{ post.excerpt }}
-              {%- endif -%}
-            </div>
-          </li>
-          {%- endfor -%}
-        </ul>
-       {%- endif -%}
        <script src="https://utteranc.es/client.js"
         repo="angrycutebear/myblog"
         issue-term="pathname"
