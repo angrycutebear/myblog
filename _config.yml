@@ -4,7 +4,7 @@ author: GitHub User
 email: your-email@domain.com
 description: 바보 학생 개발자의 블로그!
 show_excerpts: true # set to true to show excerpts on the homepage
-baseurl: blog.angrybear.dev
+baseurl: 
 
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
